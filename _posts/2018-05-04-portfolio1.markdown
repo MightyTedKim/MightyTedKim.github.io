@@ -1,0 +1,49 @@
+---
+layout: post
+title:  "FlexDashboard"
+date:   2018-05-04 00:00:00 +0530
+img: project1.jpg
+---
+
+원래 초안은 두가지였다. 
+
+ ![img](https://blogfiles.pstatic.net/MjAxODA5MjJfMTQx/MDAxNTM3NTQ0NTQ2ODIy.LKyZ3FBlMk7C6uhItiPxz_8pV6qgVuziLPTbtSZVZ1Mg.v31aRGKv2tvsnjKaDMtV7yV-hbf27ZP9RWqWrh86HB8g.JPEG.deet1107/KakaoTalk_20180922_003944788.jpg)  ![img](https://blogfiles.pstatic.net/MjAxODA5MjJfMTY2/MDAxNTM3NTQ0NDM1MTU4.qxFQjypW6PFC2SkxVJCALfVzlhc48Abcd_cTaNmOAgUg.pUSCW31XhWPsWVWxi-4rHJxuzVbn_M4-jhB2VsaRkjEg.JPEG.deet1107/KakaoTalk_20180922_003945011.jpg)
+
+
+
+총 3개 만들어봤다.
+
+
+
+**1. 요약**
+
+**텍스트 : 재고번호/ 총 판매 기간/ 현재 날짜 / 부서**
+
+**그래프 : 판매 추이( 색/ 사이즈 )**
+
+ 
+
+![img](https://blogfiles.pstatic.net/MjAxODA5MjJfMTE0/MDAxNTM3NTQ1Mzc3NjM2.lYOv-6TuFUHop83Oae0XseBQXVi4UFsWGxNNXvDOIJEg.kjvj77tTczQ2RR3SfZgqG-V1a_mu_mVJDdv-5ZVcP-og.JPEG.deet1107/screencapture-file-C-Users-tedkim-OneDrive-hansae-hansae_sales_LS-Overall_SalesReport_20180523-html-2018-09-22-00_30_31_%281%29.jpg)
+
+
+
+**2. 특정 시점의 제품 지표**
+
+
+![img](https://blogfiles.pstatic.net/MjAxODA5MjJfMTcz/MDAxNTM3NTQ0NzMxMDQ3.cPN8USqmkVDSxPI6AY3vT40w6WBaNWvqIGwl9QcqdYcg.8zOe1bZWq2aMYq9kU-8hQGkujAwVpOZNL2mxK_YcArUg.JPEG.deet1107/screencapture-file-C-Users-tedkim-OneDrive-hansae-hansae_sales_LS-Overall_SalesReport_20180523-html-2018-09-22-00_30_51.png)
+
+
+
+**3. 누적 기간의 특정 제품**
+
+ **색상/ 제품 코드/ 사이즈/ 지역** 
+
+![img](https://blogfiles.pstatic.net/MjAxODA5MjJfMjU0/MDAxNTM3NTQ1MTQxNzU3.nox4Ba0a6_Xasd1DVIhVMsgZOK1qWeYSStpbzxlRILkg._E0IzRGoRjhTWNdq_OUteuIeBEsqOv_8nbYLQE1EQXQg.JPEG.deet1107/screencapture-file-C-Users-tedkim-OneDrive-R-LS_R-Final-overAllSalesReport_20180606-Criteria_SalesReport_STK_20180606-html-2018-09-22-00_33_18.jpg)
+
+
+
+데이터 구조를 공부하는데 도움이 많이 되었다.
+
+파이썬도 금방 할 수 있을 것 같다.
+
+
