@@ -1,34 +1,20 @@
 ---
 layout: default
 ---
-<style>
-img.round_img{
-    border-radius: 50%;
-    height: 400px;
-    display: block;
-    margin: 0 auto;
-}
-</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+
+<script> 
+    $(function(){
+      $("#includeIntro").load("intro.html"); 
+      $("#includeExperience").load("experience.html"); 
+    });
+    </script> 
 <div class="container">
 
-    <div class ="into">
-      <div class="row">
+    <div id="includeIntro"></div>
 
-        <div class="col-md-6">
-          <img class="img-responsive round_img" 
-          src="images/profile.png" alt="Avatar">
-        </div>
-
-        <div class="col-md-6">
-          <div class="intro-text">
-            <div class="name"> <b>김학건 </b> </div>
-            <div class="skills"><b> Skill Set</b></div>
-            <div> 테스트 중</div>
-          </div>
-        </div>
-        
-      </div>
-    </div>
+    <div id="includeExperience"></div>
 
     <hr class="star-light">
     <h2>Portfolio</h2>
@@ -97,7 +83,6 @@ img.round_img{
           {% endif %}
 
         </div>
-        <div class="col-md-4"> </div>
       </div>
 
 

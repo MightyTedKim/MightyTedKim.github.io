@@ -1,0 +1,103 @@
+
+
+<div class="row">          
+
+  <hr class="star-light">
+  <h2>Experience</h2>
+
+
+  <div class ="graph">
+    <div class="row">
+      <div class="col-md-12">
+          <div id="timeline" style="width:100%; height:400px;"></div>   
+        </div>          
+    </div>
+  </div>
+</div>
+    
+<script>    
+$(document).ready(function () {                                     
+  console.log(1);
+  Highcharts.setOptions({
+        chart: {
+            height: 250,
+            backgroundColor: "transparent",
+            style: {
+                fontFamily: "Lato",
+            },
+        },
+        title: {
+            text: ""
+        },
+        legend: {
+            enabled: false,
+        },
+        credits: {
+            enabled: false,
+        },
+        yAxis: {
+            min: 0,
+            labels: {
+                enabled: false
+            },
+            title: {
+                text: ""
+            },
+            gridLineColor: "transparent",
+      },
+    });
+
+    
+    plot_options_timeline = {
+        chart: {
+            type: "line",
+            renderTo: "timeline",
+            zoomType: "x",
+        },
+        colors:  ["#d35400", "#2980b9", "#2ecc71", "#f1c40f", "#2c3e50", "#7f8c8d"],
+        xAxis: {
+            labels: {
+                enabled: true
+            },
+            type: "datetime",
+            min: Date.UTC(2016,  01, 01),
+            max: Date.UTC(new Date().getFullYear(),  new Date().getMonth() + 3, 29)
+        },
+        plotOptions: {
+            line: {
+            lineWidth: 10
+            }
+        },
+        tooltip: {
+            formatter: function() {
+                    info = {
+                        "대학교": "중앙대학교 경영학 졸업 (2010.03 ~ 2017.02)",
+                        "비IT인턴": "오티스 엘리베이터 코리아, 홍보팀 (2016.4 ~ 2016.7)",
+                        "비IT회사": "한세 실업, Walmart 해외영업 (2016.11 ~ 2017.05)",
+                        "IT독학": "생활코딩, Inflearn, codeit (2018.1 ~ 2018.04)",
+                        "IT학원": "플레이데이터 빅데이터 융합과정 (2018.4 ~ 2018.11)",
+                        "IT인턴": "엔코아 데이터 솔루션팀 (2018.12 ~ 2019.3)",
+                    };
+                    
+                    date_format = Highcharts.dateFormat('%Y - %B', new Date(this.x));
+                    
+                    return "<b>"+this.series.name+"</b><br/><em>"+date_format+"</em><br/>"+info[this.series.name];
+            }
+        },
+        series: [
+            { name: "대학교",       data: [ [Date.UTC(2010, 3, 2), 1], [Date.UTC(2017, 2, 1), 1], ] },
+
+            { name: "비IT인턴",        data: [ [Date.UTC(2016, 4, 15), 2], [Date.UTC(2016, 7, 15), 2], ] },
+            { name: "비IT회사",        data: [ [Date.UTC(2016, 11, 7), 2], [Date.UTC(2017, 5, 4), 2], ] },
+            { name: "방황",       data: [ [Date.UTC(2017, 06, 1), 2], [Date.UTC(2017, 12, 31), 3], ] },
+
+            { name: "IT독학",       data: [ [Date.UTC(2018, 01, 1), 4], [Date.UTC(2018, 4, 15), 5], ] },
+            { name: "IT학원",       data: [ [Date.UTC(2018, 04, 15), 5], [Date.UTC(2018, 11, 15), 6], ] },
+            { name: "IT인턴",         data: [ [Date.UTC(2018, 12, 10), 6], [Date.UTC(2019, 2, 28), 6], ] },
+        ]
+    };
+
+    chart = new Highcharts.Chart(plot_options_timeline);
+
+});
+</script>
