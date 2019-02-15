@@ -2,7 +2,7 @@
 layout: post
 title:  "Spring"
 date:   2018-05-04 00:00:00 +0530
-img: project2.png
+img: images/project2/main.png
 ---
 
 
@@ -33,8 +33,6 @@ GIS는 네이버 v3 API를 사용했다.
 
 이것저것 욕심이 생겨서 추가해봤다.
 
-![img](https://blogfiles.pstatic.net/MjAxODA5MTRfMTUz/MDAxNTM2OTA4NDgxMTgy.cvZZtnI2QpuuOLDEixhsnOHz1fj678nPb6hLxrlYpkYg.U5s6LQv-0NV9dMb9IId1PcV1-u9Mkc29F2Bo-vtZSZAg.GIF.deet1107/%EB%93%9C%EB%A1%A0%EB%82%98%EB%93%A4%EC%9D%B4_%281%29.gif)
-
 
 
 **크게 신경 쓴 부분은 아래 3가지다.**
@@ -42,6 +40,8 @@ GIS는 네이버 v3 API를 사용했다.
 **당연히 지도가 main이고, 여기에 뿌릴 공역 정보를 API로 얻어왔다.**
 
 **그리고 객체 생성, 공역 표시에 시간이 걸려서 로딩속도 에 신경을 썼다.**
+
+![playdata_project]({{site.baseurl}}/images/project2/drone_picnic.gif)
 
 
 
@@ -66,6 +66,12 @@ GIS는 네이버 v3 API를 사용했다.
 그래서 눈물을 머금고 DB에 저장했다.(geojson)
 
 **공역 정보(geojson) 네이버에 구현하는 방법:** [https://jsfiddle.net/MightyTedKim/xo6gd5w9/](https://jsfiddle.net/xpvt214o/786062/)
+
+![jsfiddle]({{site.baseurl}}/images/project2/drone_picnic_map_jsfiddle.PNG)
+
+
+
+
 
 jsfiddle에 심심해서 정리했다.
 
@@ -125,8 +131,13 @@ mapshaper.org에서 13% simplify하니 크기가 1/4로 줄었고 속도도 빨�
 
 
 
-<과정이 끝날 쯤 학원에서 이렇게 정리해줬다.>
+- 학원에서 준비해준 링크-
 
-링크 : 
 
-[![img](https://dthumb-phinf.pstatic.net/?src=%22https%3A%2F%2Fplaydata.io%2Fwp-content%2Fuploads%2F2018%2F11%2F%25EB%2594%25A5%25EB%259F%25AC%25EB%258B%259D1%25EA%25B8%25B0_%25EB%2593%259C%25EB%25A1%25A0%25ED%2594%25BC%25ED%2581%25AC%25EB%258B%2589_%25EC%258D%25B8%25EB%2584%25A4%25EC%259D%25BC-1024x922.jpg%22&type=f560_336)](https://playdata.io/archives/7109)
+
+[![jsfiddle]({{site.baseurl}}/images/project2/playdata_project.jpg)](https://playdata.io/archives/7109)
+
+
+
+
+
